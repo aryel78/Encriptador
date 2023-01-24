@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="shortcut icon" href="imagenes/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    
+        <header>
+            <div class="contein-titulo">
+                <div class="logo">
+                    <img src="imagenes/Logo.png" alt="logo">
+                </div>
+                <div class="titulo">
+                    <h2> Encriptador de texto <span>Challenge One ALURA</span></h2>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="informacion">
+            <p>Solo letras minúsculas y sin acentos.</p>
+            </div>
+            <div class="contain">
+                <div class="seccion-uno">
+                    <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+
+                    <div class="botones">
+                        <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                        <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                    </div>
+                </div>
+                    
+                <div class="seccion-dos">
+                    <textarea class="mensaje" cols="20" rows="10" class="mensaje"></textarea>
+                    <div class="div-copiar">
+                        <button class="btncopiar" onclick="copiar()">Copiar</button>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        <footer>
+            <p>2023 &copy; Diseñado por <span>AGC</span></p>
+        </footer>
+    <script src="script.js"></script>
+</body>
+</html>
